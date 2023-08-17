@@ -94,14 +94,13 @@ body {
     text-align: center;
 }
 
-.modal {
-    margin-left: 33%;
-    display: inline-block;
-    box-sizing: border-box;
+/*.modal {
+    display: flex;
+    top: 50%;
+    margin-left: 40%;
     padding: 15px;
-    max-height: 600px;
-    max-width: 600px;
-}
+    background-color: transparent;
+}*/
 
 
 .modal-header,
