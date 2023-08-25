@@ -149,6 +149,16 @@ let pokemonRepository = (function () {
         }
     }
 
+    // Add an event listener to the search button and input field
+    document.getElementById('searchbar').addEventListener('input', function () {
+        pokemonRepository.search_pokemon();
+    });
+
+    document.getElementById('searchButton').addEventListener('click', function (event) {
+        event.preventDefault();
+        pokemonRepository.search_pokemon();
+    });
+
 
     function showDetails(pokemon) {
         loadPokemonDetails(pokemon).then(function () {
